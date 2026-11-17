@@ -1,0 +1,41 @@
+{
+  "project": "Building Energy Load Forecaster",
+  "dataset_id": 242,
+  "rows": 768,
+  "features": [
+    "X1",
+    "X2",
+    "X3",
+    "X4",
+    "X5",
+    "X6",
+    "X7",
+    "X8"
+  ],
+  "targets": [
+    "Y1",
+    "Y2"
+  ],
+  "split": "random 75/25 holdout; seed=42",
+  "task": "regression",
+  "holdout": {
+    "Y1": {
+      "mae": 0.3468267960327441,
+      "rmse": 0.49324784883907363,
+      "r2": 0.9976853432724663,
+      "median_baseline_mae": 9.457500000000001
+    },
+    "Y2": {
+      "mae": 1.18435902841805,
+      "rmse": 1.9091169218211843,
+      "r2": 0.9609626481127724,
+      "median_baseline_mae": 8.919583333333334
+    }
+  },
+  "limitations": "Public benchmark; holdout results do not establish production performance.",
+  "source_url": "https://archive.ics.uci.edu/dataset/242",
+  "generated_at": "2026-11-17",
+  "artifacts_published": [
+    "reports/benchmark.json"
+  ]
+}
